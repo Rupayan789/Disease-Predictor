@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Bar</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/style.css" type="text/css">
+
+    <!-- Favicon -->
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="icon" class="universal_left_margin">
+            <img src="./static/images/mental-health.png" alt="icon">
+        </div>
+
+        <div id="title">
+            <p>
+                Health - Bar *
+            </p>
+        </div>
+    </header>
+
+    <!-- Select Your Symptoms -->
+
+    <div id="Select_symptoms">
+        <div>
+            <img src="./static/images/crosshair.png" alt="">
+        </div>
+            
+        <div>
+            <p>
+                Select Your Symptoms :
+            </p>
+        </div>
+    </div>
+
+    <!-- Symptom Form -->
+    <div id="Symptom_Form" >
+        <form action="/predict" method="post">
+
+            <!-- Symptom a -->
+            
+            <div id="symptom_a" class="symptom">
+                <div id="symptom_heading_a" class="symptom_heading">
+                    <img src="./static/images/letter-a.png" alt="letter_a" srcset="">
+                </div>
+
+                <div>
+                    <div>abdominal_pain :</div> 
+                    <input type="radio" name="abdominal_pain" id="" value="0" checked> No
+                    <input type="radio" name="abdominal_pain" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>abnormal_menstruation :</div> 
+                    <input type="radio" name="abnormal_menstruation" id="" value="0"checked> No
+                    <input type="radio" name="abnormal_menstruation" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>acidity :</div> 
+                    <input type="radio" name="acidity" id="" value="0"checked> No
+                    <input type="radio" name="acidity" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>acute_liver_failure :</div> 
+                    <input type="radio" name="acute_liver_failure" id="" value="0"checked> No
+                    <input type="radio" name="acute_liver_failure" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>altered_sensorium :</div> 
+                    <input type="radio" name="altered_sensorium" id="" value="0"checked> No
+                    <input type="radio" name="altered_sensorium" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>anxiety :</div> 
+                    <input type="radio" name="anxiety" id="" value="0"checked> No
+                    <input type="radio" name="anxiety" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom b -->
+
+            <div id="symptom_b" class="symptom">
+                <div id="symptom_heading_b" class="symptom_heading">
+                    <img src="./static/images/letter-b.png" alt="letter_b" srcset="">
+                </div>
+
+                <div>
+                    <div>back_pain :</div> 
+                    <input type="radio" name="back_pain" id="" value="0" checked> No
+                    <input type="radio" name="back_pain" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>belly_pain :</div> 
+                    <input type="radio" name="belly_pain" id="" value="0"checked> No
+                    <input type="radio" name="belly_pain" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>blackheads :</div> 
+                    <input type="radio" name="blackheads" id="" value="0"checked> No
+                    <input type="radio" name="blackheads" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>bladder_discomfort :</div> 
+                    <input type="radio" name="bladder_discomfort" id="" value="0"checked> No
+                    <input type="radio" name="bladder_discomfort" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>blister :</div> 
+                    <input type="radio" name="blister" id="" value="0"checked> No
+                    <input type="radio" name="blister" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>blood_in_sputum :</div> 
+                    <input type="radio" name="blood_in_sputum" id="" value="0"checked> No
+                    <input type="radio" name="blood_in_sputum" id="" value="1"> Yes
+                    <br>
+
+                    <div>bloody_stool :</div> 
+                    <input type="radio" name="bloody_stool" id="" value="0" checked> No
+                    <input type="radio" name="bloody_stool" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>blurred_and_distorted_vision :</div> 
+                    <input type="radio" name="blurred_and_distorted_vision" id="" value="0"checked> No
+                    <input type="radio" name="blurred_and_distorted_vision" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>breathlessness :</div> 
+                    <input type="radio" name="breathlessness" id="" value="0"checked> No
+                    <input type="radio" name="breathlessness" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>brittle_nails :</div> 
+                    <input type="radio" name="brittle_nails" id="" value="0"checked> No
+                    <input type="radio" name="brittle_nails" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>bruising :</div> 
+                    <input type="radio" name="bruising" id="" value="0"checked> No
+                    <input type="radio" name="bruising" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>burning_micturition :</div> 
+                    <input type="radio" name="burning_micturition" id="" value="0"checked> No
+                    <input type="radio" name="burning_micturition" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom c -->
+
+            <div id="symptom_c" class="symptom">
+                <div id="symptom_heading_c" class="symptom_heading">
+                    <img src="./static/images/letter-c.png" alt="letter_c" srcset="">
+                </div>
+
+                <div>
+                    <div>chest_pain :</div> 
+                    <input type="radio" name="chest_pain" id="" value="0" checked> No
+                    <input type="radio" name="chest_pain" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>chills :</div> 
+                    <input type="radio" name="chills" id="" value="0"checked> No
+                    <input type="radio" name="chills" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>cold_hands_and_feets :</div> 
+                    <input type="radio" name="cold_hands_and_feets" id="" value="0"checked> No
+                    <input type="radio" name="cold_hands_and_feets" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>coma :</div> 
+                    <input type="radio" name="coma" id="" value="0"checked> No
+                    <input type="radio" name="coma" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>congestion :</div> 
+                    <input type="radio" name="congestion" id="" value="0"checked> No
+                    <input type="radio" name="congestion" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>constipation :</div> 
+                    <input type="radio" name="constipation" id="" value="0"checked> No
+                    <input type="radio" name="constipation" id="" value="1"> Yes
+                    <br>
+
+                    <div>continuous_feel_of_urine :</div> 
+                    <input type="radio" name="continuous_feel_of_urine" id="" value="0" checked> No
+                    <input type="radio" name="continuous_feel_of_urine" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>continuous_sneezing :</div> 
+                    <input type="radio" name="continuous_sneezing" id="" value="0"checked> No
+                    <input type="radio" name="continuous_sneezing" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>cough :</div> 
+                    <input type="radio" name="cough" id="" value="0"checked> No
+                    <input type="radio" name="cough" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>cramps :</div> 
+                    <input type="radio" name="cramps" id="" value="0"checked> No
+                    <input type="radio" name="cramps" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom d -->
+
+            <div id="symptom_d" class="symptom">
+                <div id="symptom_heading_d" class="symptom_heading">
+                    <img src="./static/images/letter-d.png" alt="letter_d" srcset="">
+                </div>
+
+                <div>
+                    <div>dark_urine :</div> 
+                    <input type="radio" name="dark_urine" id="" value="0" checked> No
+                    <input type="radio" name="dark_urine" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>dehydration :</div> 
+                    <input type="radio" name="dehydration" id="" value="0"checked> No
+                    <input type="radio" name="dehydration" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>depression :</div> 
+                    <input type="radio" name="depression" id="" value="0"checked> No
+                    <input type="radio" name="depression" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>diarrhoea :</div> 
+                    <input type="radio" name="diarrhoea" id="" value="0"checked> No
+                    <input type="radio" name="diarrhoea" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>dischromic_patches :</div> 
+                    <input type="radio" name="dischromic_patches" id="" value="0"checked> No
+                    <input type="radio" name="dischromic_patches" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>distention_of_abdomen :</div> 
+                    <input type="radio" name="distention_of_abdomen" id="" value="0"checked> No
+                    <input type="radio" name="distention_of_abdomen" id="" value="1"> Yes
+                    <br>
+
+                    <div>dizziness :</div> 
+                    <input type="radio" name="dizziness" id="" value="0" checked> No
+                    <input type="radio" name="dizziness" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>drying_and_tingling_lips :</div> 
+                    <input type="radio" name="drying_and_tingling_lips" id="" value="0"checked> No
+                    <input type="radio" name="drying_and_tingling_lips" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom e -->
+
+            <div id="symptom_e" class="symptom">
+                <div id="symptom_heading_e" class="symptom_heading">
+                    <img src="./static/images/letter-e.png" alt="letter_e" srcset="">
+                </div>
+
+                <div>
+                    <div>enlarged_thyroid :</div> 
+                    <input type="radio" name="enlarged_thyroid" id="" value="0" checked> No
+                    <input type="radio" name="enlarged_thyroid" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>excessive_hunger :</div> 
+                    <input type="radio" name="excessive_hunger" id="" value="0"checked> No
+                    <input type="radio" name="excessive_hunger" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>extra_marital_contacts :</div> 
+                    <input type="radio" name="extra_marital_contacts" id="" value="0"checked> No
+                    <input type="radio" name="extra_marital_contacts" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom f -->
+
+            <div id="symptom_f" class="symptom">
+                <div id="symptom_heading_f" class="symptom_heading">
+                    <img src="./static/images/letter-f.png" alt="letter_f" srcset="">
+                </div>
+
+                <div>
+                    <div>family_history :</div> 
+                    <input type="radio" name="family_history" id="" value="0" checked> No
+                    <input type="radio" name="family_history" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>fast_heart_rate :</div> 
+                    <input type="radio" name="fast_heart_rate" id="" value="0"checked> No
+                    <input type="radio" name="fast_heart_rate" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>fatigue :</div> 
+                    <input type="radio" name="fatigue" id="" value="0"checked> No
+                    <input type="radio" name="fatigue" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>fluid_overload :</div> 
+                    <input type="radio" name="fluid_overload" id="" value="0"checked> No
+                    <input type="radio" name="fluid_overload" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>foul_smell_of_urine :</div> 
+                    <input type="radio" name="foul_smell_of_urine" id="" value="0"checked> No
+                    <input type="radio" name="foul_smell_of_urine" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom h -->
+
+            <div id="symptom_h" class="symptom">
+                <div id="symptom_heading_h" class="symptom_heading">
+                    <img src="./static/images/letter-h.png" alt="letter_h" srcset="">
+                </div>
+
+                <div>
+                    <div>headache :</div> 
+                    <input type="radio" name="headache" id="" value="0" checked> No
+                    <input type="radio" name="headache" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>high_fever :</div> 
+                    <input type="radio" name="high_fever" id="" value="0"checked> No
+                    <input type="radio" name="high_fever" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>hip_joint_pain :</div> 
+                    <input type="radio" name="hip_joint_pain" id="" value="0"checked> No
+                    <input type="radio" name="hip_joint_pain" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>history_of_alcohol_consumption :</div> 
+                    <input type="radio" name="history_of_alcohol_consumption" id="" value="0"checked> No
+                    <input type="radio" name="history_of_alcohol_consumption" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom i -->
+
+            <div id="symptom_i" class="symptom">
+                <div id="symptom_heading_i" class="symptom_heading">
+                    <img src="./static/images/letter-i.png" alt="letter_i" srcset="">
+                </div>
+
+                <div>
+                    <div>increased_appetite :</div> 
+                    <input type="radio" name="increased_appetite" id="" value="0" checked> No
+                    <input type="radio" name="increased_appetite" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>indigestion :</div> 
+                    <input type="radio" name="indigestion" id="" value="0"checked> No
+                    <input type="radio" name="indigestion" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>inflammatory_nails :</div> 
+                    <input type="radio" name="inflammatory_nails" id="" value="0"checked> No
+                    <input type="radio" name="inflammatory_nails" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>internal_itching :</div> 
+                    <input type="radio" name="internal_itching" id="" value="0"checked> No
+                    <input type="radio" name="internal_itching" id="" value="1"> Yes
+                    <br>
+
+                    <div>irregular_sugar_level :</div> 
+                    <input type="radio" name="irregular_sugar_level" id="" value="0" checked> No
+                    <input type="radio" name="irregular_sugar_level" id="" value="1"> Yes
+                    <br>
+
+                                    
+                    <div>irritability :</div> 
+                    <input type="radio" name="irritability" id="" value="0"checked> No
+                    <input type="radio" name="irritability" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>irritation_in_anus :</div> 
+                    <input type="radio" name="irritation_in_anus" id="" value="0"checked> No
+                    <input type="radio" name="irritation_in_anus" id="" value="1"> Yes
+                    <br>
+
+
+                    <div>itching :</div> 
+                    <input type="radio" name="itching" id="" value="0"checked> No
+                    <input type="radio" name="itching" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom j -->
+
+            <div id="symptom_j" class="symptom">
+                <div id="symptom_heading_j" class="symptom_heading">
+                    <img src="./static/images/letter-j.png" alt="letter_j" srcset="">
+                </div>
+
+                <div>
+                    <div>joint_pain :</div> 
+                    <input type="radio" name="joint_pain" id="" value="0" checked> No
+                    <input type="radio" name="joint_pain" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom k -->
+
+            <div id="symptom_k" class="symptom">
+                <div id="symptom_heading_k" class="symptom_heading">
+                    <img src="./static/images/letter-k.png" alt="letter_k" srcset="">
+                </div>
+
+                <div>
+                    <div>knee_pain :</div> 
+                    <input type="radio" name="knee_pain" id="" value="0" checked> No
+                    <input type="radio" name="knee_pain" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom l -->
+
+            <div id="symptom_l" class="symptom">
+                <div id="symptom_heading_l" class="symptom_heading">
+                    <img src="./static/images/letter-l.png" alt="letter_l" srcset="">
+                </div>
+                
+                <div>
+                    <div>lack_of_concentration :</div> 
+                    <input type="radio" name="lack_of_concentration" id="" value="0" checked> No
+                    <input type="radio" name="lack_of_concentration" id="" value="1"> Yes
+                    <br>
+
+                    <div>lethargy :</div> 
+                    <input type="radio" name="lethargy" id="" value="0" checked> No
+                    <input type="radio" name="lethargy" id="" value="1"> Yes
+                    <br>
+
+                    <div>loss_of_appetite :</div> 
+                    <input type="radio" name="loss_of_appetite" id="" value="0" checked> No
+                    <input type="radio" name="loss_of_appetite" id="" value="1"> Yes
+                    <br>
+
+                    <div>loss_of_balance :</div> 
+                    <input type="radio" name="loss_of_balance" id="" value="0" checked> No
+                    <input type="radio" name="loss_of_balance" id="" value="1"> Yes
+                    <br>
+
+                    <div>loss_of_smell :</div> 
+                    <input type="radio" name="loss_of_smell" id="" value="0" checked> No
+                    <input type="radio" name="loss_of_smell" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom m -->
+
+            <div id="symptom_m" class="symptom">
+                <div id="symptom_heading_m" class="symptom_heading">
+                    <img src="./static/images/letter-m.png" alt="letter_m" srcset="">
+                </div>
+                
+                <div>
+                    <div>malaise :</div> 
+                    <input type="radio" name="malaise" id="" value="0" checked> No
+                    <input type="radio" name="malaise" id="" value="1"> Yes
+                    <br>
+
+                    <div>mild_fever :</div> 
+                    <input type="radio" name="mild_fever" id="" value="0" checked> No
+                    <input type="radio" name="mild_fever" id="" value="1"> Yes
+                    <br>
+
+                    <div>mood_swings :</div> 
+                    <input type="radio" name="mood_swings" id="" value="0" checked> No
+                    <input type="radio" name="mood_swings" id="" value="1"> Yes
+                    <br>
+
+                    <div>movement_stiffness :</div> 
+                    <input type="radio" name="movement_stiffness" id="" value="0" checked> No
+                    <input type="radio" name="movement_stiffness" id="" value="1"> Yes
+                    <br>
+
+                    <div>mucoid_sputum :</div> 
+                    <input type="radio" name="mucoid_sputum" id="" value="0" checked> No
+                    <input type="radio" name="mucoid_sputum" id="" value="1"> Yes
+                    <br>
+
+                    <div>muscle_pain :</div> 
+                    <input type="radio" name="muscle_pain" id="" value="0" checked> No
+                    <input type="radio" name="muscle_pain" id="" value="1"> Yes
+                    <br>
+
+                    <div>muscle_wasting :</div> 
+                    <input type="radio" name="muscle_wasting" id="" value="0" checked> No
+                    <input type="radio" name="muscle_wasting" id="" value="1"> Yes
+                    <br>
+
+                    <div>muscle_weakness :</div> 
+                    <input type="radio" name="muscle_weakness" id="" value="0" checked> No
+                    <input type="radio" name="muscle_weakness" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom n -->
+
+            <div id="symptom_n" class="symptom">
+                <div id="symptom_heading_n" class="symptom_heading">
+                    <img src="./static/images/letter-n.png" alt="letter_n" srcset="">
+                </div>
+                
+                <div>
+                    <div>nausea :</div> 
+                    <input type="radio" name="nausea" id="" value="0" checked> No
+                    <input type="radio" name="nausea" id="" value="1"> Yes
+                    <br>
+
+                    <div>neck_pain :</div> 
+                    <input type="radio" name="neck_pain" id="" value="0" checked> No
+                    <input type="radio" name="neck_pain" id="" value="1"> Yes
+                    <br>
+
+                    <div>nodal_skin_eruptions :</div> 
+                    <input type="radio" name="nodal_skin_eruptions" id="" value="0" checked> No
+                    <input type="radio" name="nodal_skin_eruptions" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom o -->
+
+            <div id="symptom_o" class="symptom">
+                <div id="symptom_heading_o" class="symptom_heading">
+                    <img src="./static/images/letter-o.png" alt="letter_o" srcset="">
+                </div>
+                
+                <div>
+                    <div>obesity :</div> 
+                    <input type="radio" name="obesity" id="" value="0" checked> No
+                    <input type="radio" name="obesity" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom p -->
+
+            <div id="symptom_p" class="symptom">
+                <div id="symptom_heading_p" class="symptom_heading">
+                    <img src="./static/images/letter-p.png" alt="letter_p" srcset="">
+                </div>
+                
+                <div>
+                    <div>pain_behind_the_eyes :</div> 
+                    <input type="radio" name="pain_behind_the_eyes" id="" value="0" checked> No
+                    <input type="radio" name="pain_behind_the_eyes" id="" value="1"> Yes
+                    <br>
+
+                    <div>pain_during_bowel_movements :</div> 
+                    <input type="radio" name="pain_during_bowel_movements" id="" value="0" checked> No
+                    <input type="radio" name="pain_during_bowel_movements" id="" value="1"> Yes
+                    <br>
+
+                    <div>pain_in_anal_region :</div> 
+                    <input type="radio" name="pain_in_anal_region" id="" value="0" checked> No
+                    <input type="radio" name="pain_in_anal_region" id="" value="1"> Yes
+                    <br>
+
+                    <div>painful_walking :</div> 
+                    <input type="radio" name="painful_walking" id="" value="0" checked> No
+                    <input type="radio" name="painful_walking" id="" value="1"> Yes
+                    <br>
+
+                    <div>palpitations :</div> 
+                    <input type="radio" name="palpitations" id="" value="0" checked> No
+                    <input type="radio" name="palpitations" id="" value="1"> Yes
+                    <br>
+
+                    <div>passage_of_gases :</div> 
+                    <input type="radio" name="passage_of_gases" id="" value="0" checked> No
+                    <input type="radio" name="passage_of_gases" id="" value="1"> Yes
+                    <br>
+
+                    <div>patches_in_throat :</div> 
+                    <input type="radio" name="patches_in_throat" id="" value="0" checked> No
+                    <input type="radio" name="patches_in_throat" id="" value="1"> Yes
+                    <br>
+
+                    <div>phlegm :</div> 
+                    <input type="radio" name="phlegm" id="" value="0" checked> No
+                    <input type="radio" name="phlegm" id="" value="1"> Yes
+                    <br>
+
+                    <div>polyuria :</div> 
+                    <input type="radio" name="polyuria" id="" value="0" checked> No
+                    <input type="radio" name="polyuria" id="" value="1"> Yes
+                    <br>
+
+                    <div>prominent_veins_on_calf :</div> 
+                    <input type="radio" name="prominent_veins_on_calf" id="" value="0" checked> No
+                    <input type="radio" name="prominent_veins_on_calf" id="" value="1"> Yes
+                    <br>
+
+                    <div>puffy_face_and_eyes :</div> 
+                    <input type="radio" name="puffy_face_and_eyes" id="" value="0" checked> No
+                    <input type="radio" name="puffy_face_and_eyes" id="" value="1"> Yes
+                    <br>
+
+                    <div>pus_filled_pimples :</div> 
+                    <input type="radio" name="pus_filled_pimples" id="" value="0" checked> No
+                    <input type="radio" name="pus_filled_pimples" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom r -->
+
+            <div id="symptom_r" class="symptom">
+                <div id="symptom_heading_r" class="symptom_heading">
+                    <img src="./static/images/letter-r.png" alt="letter_r" srcset="">
+                </div>
+                
+                <div>
+                    <div>receiving_blood_transfusion :</div> 
+                    <input type="radio" name="receiving_blood_transfusion" id="" value="0" checked> No
+                    <input type="radio" name="receiving_blood_transfusion" id="" value="1"> Yes
+                    <br>
+
+                    <div>receiving_unsterile_injections :</div> 
+                    <input type="radio" name="receiving_unsterile_injections" id="" value="0" checked> No
+                    <input type="radio" name="receiving_unsterile_injections" id="" value="1"> Yes
+                    <br>
+
+                    <div>red_sore_around_nose :</div> 
+                    <input type="radio" name="red_sore_around_nose" id="" value="0" checked> No
+                    <input type="radio" name="red_sore_around_nose" id="" value="1"> Yes
+                    <br>
+
+                    <div>red_spots_over_body :</div> 
+                    <input type="radio" name="red_spots_over_body" id="" value="0" checked> No
+                    <input type="radio" name="red_spots_over_body" id="" value="1"> Yes
+                    <br>
+
+                    <div>redness_of_eyes :</div> 
+                    <input type="radio" name="redness_of_eyes" id="" value="0" checked> No
+                    <input type="radio" name="redness_of_eyes" id="" value="1"> Yes
+                    <br>
+
+                    <div>restlessness :</div> 
+                    <input type="radio" name="restlessness" id="" value="0" checked> No
+                    <input type="radio" name="restlessness" id="" value="1"> Yes
+                    <br>
+
+                    <div>runny_nose :</div> 
+                    <input type="radio" name="runny_nose" id="" value="0" checked> No
+                    <input type="radio" name="runny_nose" id="" value="1"> Yes
+                    <br>
+
+                    <div>rusty_sputum :</div> 
+                    <input type="radio" name="rusty_sputum" id="" value="0" checked> No
+                    <input type="radio" name="rusty_sputum" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom s -->
+
+            <div id="symptom_s" class="symptom">
+                <div id="symptom_heading_s" class="symptom_heading">
+                    <img src="./static/images/letter-s.png" alt="letter_s" srcset="">
+                </div>
+                
+                <div>
+                    <div>scurring :</div> 
+                    <input type="radio" name="scurring" id="" value="0" checked> No
+                    <input type="radio" name="scurring" id="" value="1"> Yes
+                    <br>
+
+                    <div>shivering :</div> 
+                    <input type="radio" name="shivering" id="" value="0" checked> No
+                    <input type="radio" name="shivering" id="" value="1"> Yes
+                    <br>
+
+                    <div>silver_like_dusting :</div> 
+                    <input type="radio" name="silver_like_dusting" id="" value="0" checked> No
+                    <input type="radio" name="silver_like_dusting" id="" value="1"> Yes
+                    <br>
+
+                    <div>sinus_pressure :</div> 
+                    <input type="radio" name="sinus_pressure" id="" value="0" checked> No
+                    <input type="radio" name="sinus_pressure" id="" value="1"> Yes
+                    <br>
+
+                    <div>skin_peeling :</div> 
+                    <input type="radio" name="skin_peeling" id="" value="0" checked> No
+                    <input type="radio" name="skin_peeling" id="" value="1"> Yes
+                    <br>
+
+                    <div>skin_rash :</div> 
+                    <input type="radio" name="skin_rash" id="" value="0" checked> No
+                    <input type="radio" name="skin_rash" id="" value="1"> Yes
+                    <br>
+
+                    <div>slurred_speech :</div> 
+                    <input type="radio" name="slurred_speech" id="" value="0" checked> No
+                    <input type="radio" name="slurred_speech" id="" value="1"> Yes
+                    <br>
+
+                    <div>small_dents_in_nails :</div> 
+                    <input type="radio" name="small_dents_in_nails" id="" value="0" checked> No
+                    <input type="radio" name="small_dents_in_nails" id="" value="1"> Yes
+                    <br>
+
+                    <div>spinning_movements :</div> 
+                    <input type="radio" name="spinning_movements" id="" value="0" checked> No
+                    <input type="radio" name="spinning_movements" id="" value="1"> Yes
+                    <br>
+
+                    <div>spotting_urination :</div> 
+                    <input type="radio" name="spotting_urination" id="" value="0" checked> No
+                    <input type="radio" name="spotting_urination" id="" value="1"> Yes
+                    <br>
+
+                    <div>stiff_neck :</div> 
+                    <input type="radio" name="stiff_neck" id="" value="0" checked> No
+                    <input type="radio" name="stiff_neck" id="" value="1"> Yes
+                    <br>
+
+                    <div>stomach_bleeding :</div> 
+                    <input type="radio" name="stomach_bleeding" id="" value="0" checked> No
+                    <input type="radio" name="stomach_bleeding" id="" value="1"> Yes
+                    <br>
+
+                    <div>stomach_pain :</div> 
+                    <input type="radio" name="stomach_pain" id="" value="0" checked> No
+                    <input type="radio" name="stomach_pain" id="" value="1"> Yes
+                    <br>
+
+                    <div>sunken_eyes :</div> 
+                    <input type="radio" name="sunken_eyes" id="" value="0" checked> No
+                    <input type="radio" name="sunken_eyes" id="" value="1"> Yes
+                    <br>
+
+                    <div>sweating :</div> 
+                    <input type="radio" name="sweating" id="" value="0" checked> No
+                    <input type="radio" name="sweating" id="" value="1"> Yes
+                    <br>
+
+                    <div>swelled_lymph_nodes :</div> 
+                    <input type="radio" name="swelled_lymph_nodes" id="" value="0" checked> No
+                    <input type="radio" name="swelled_lymph_nodes" id="" value="1"> Yes
+                    <br>
+
+                    <div>swelling_joints :</div> 
+                    <input type="radio" name="swelling_joints" id="" value="0" checked> No
+                    <input type="radio" name="swelling_joints" id="" value="1"> Yes
+                    <br>
+
+                    <div>swelling_of_stomach :</div> 
+                    <input type="radio" name="swelling_of_stomach" id="" value="0" checked> No
+                    <input type="radio" name="swelling_of_stomach" id="" value="1"> Yes
+                    <br>
+
+                    <div>swollen_blood_vessels :</div> 
+                    <input type="radio" name="swollen_blood_vessels" id="" value="0" checked> No
+                    <input type="radio" name="swollen_blood_vessels" id="" value="1"> Yes
+                    <br>
+
+                    <div>swollen_extremeties :</div> 
+                    <input type="radio" name="swollen_extremeties" id="" value="0" checked> No
+                    <input type="radio" name="swollen_extremeties" id="" value="1"> Yes
+                    <br>
+
+                    <div>swollen_legs :</div> 
+                    <input type="radio" name="swollen_legs" id="" value="0" checked> No
+                    <input type="radio" name="swollen_legs" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom t -->
+
+            <div id="symptom_t" class="symptom">
+                <div id="symptom_heading_t" class="symptom_heading">
+                    <img src="./static/images/letter-t.png" alt="letter_t" srcset="">
+                </div>
+                
+                <div>
+                    <div>throat_irritation :</div> 
+                    <input type="radio" name="throat_irritation" id="" value="0" checked> No
+                    <input type="radio" name="throat_irritation" id="" value="1"> Yes
+                    <br>
+
+                    <div>toxic_look_(typhos) :</div> 
+                    <input type="radio" name="toxic_look_(typhos)" id="" value="0" checked> No
+                    <input type="radio" name="toxic_look_(typhos)" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom u -->
+
+            <div id="symptom_u" class="symptom">
+                <div id="symptom_heading_u" class="symptom_heading">
+                    <img src="./static/images/letter-u.png" alt="letter_u" srcset="">
+                </div>
+                
+                <div>
+                    <div>ulcers_on_tongue :</div> 
+                    <input type="radio" name="ulcers_on_tongue" id="" value="0" checked> No
+                    <input type="radio" name="ulcers_on_tongue" id="" value="1"> Yes
+                    <br>
+
+                    <div>unsteadiness :</div> 
+                    <input type="radio" name="unsteadiness" id="" value="0" checked> No
+                    <input type="radio" name="unsteadiness" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom v -->
+
+            <div id="symptom_v" class="symptom">
+                <div id="symptom_heading_v" class="symptom_heading">
+                    <img src="./static/images/letter-v.png" alt="letter_v" srcset="">
+                </div>
+                
+                <div>
+                    <div>visual_disturbances :</div> 
+                    <input type="radio" name="visual_disturbances" id="" value="0" checked> No
+                    <input type="radio" name="visual_disturbances" id="" value="1"> Yes
+                    <br>
+
+                    <div>vomiting :</div> 
+                    <input type="radio" name="vomiting" id="" value="0" checked> No
+                    <input type="radio" name="vomiting" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom w -->
+
+            <div id="symptom_w" class="symptom">
+                <div id="symptom_heading_w" class="symptom_heading">
+                    <img src="./static/images/letter-w.png" alt="letter_w" srcset="">
+                </div>
+                
+                <div>
+                    <div>watering_from_eyes :</div> 
+                    <input type="radio" name="watering_from_eyes" id="" value="0" checked> No
+                    <input type="radio" name="watering_from_eyes" id="" value="1"> Yes
+                    <br>
+
+                    <div>weakness_in_limbs :</div> 
+                    <input type="radio" name="weakness_in_limbs" id="" value="0" checked> No
+                    <input type="radio" name="weakness_in_limbs" id="" value="1"> Yes
+                    <br>
+
+                    <div>weakness_of_one_body_side :</div> 
+                    <input type="radio" name="weakness_of_one_body_side" id="" value="0" checked> No
+                    <input type="radio" name="weakness_of_one_body_side" id="" value="1"> Yes
+                    <br>
+
+                    <div>weight_gain :</div> 
+                    <input type="radio" name="weight_gain" id="" value="0" checked> No
+                    <input type="radio" name="weight_gain" id="" value="1"> Yes
+                    <br>
+
+                    <div>weight_loss :</div> 
+                    <input type="radio" name="weight_loss" id="" value="0" checked> No
+                    <input type="radio" name="weight_loss" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+
+            <!-- Symptom y -->
+
+            <div id="symptom_y" class="symptom">
+                <div id="symptom_heading_y" class="symptom_heading">
+                    <img src="./static/images/letter-y.png" alt="letter_y" srcset="">
+                </div>
+                
+                <div>
+                    <div>yellow_crust_ooze :</div> 
+                    <input type="radio" name="yellow_crust_ooze" id="" value="0" checked> No
+                    <input type="radio" name="yellow_crust_ooze" id="" value="1"> Yes
+                    <br>
+
+                    <div>yellow_urine :</div> 
+                    <input type="radio" name="yellow_urine" id="" value="0" checked> No
+                    <input type="radio" name="yellow_urine" id="" value="1"> Yes
+                    <br>
+
+                    <div>yellowing_of_eyes :</div> 
+                    <input type="radio" name="yellowing_of_eyes" id="" value="0" checked> No
+                    <input type="radio" name="yellowing_of_eyes" id="" value="1"> Yes
+                    <br>
+
+                    <div>yellowish_skin :</div> 
+                    <input type="radio" name="yellowish_skin" id="" value="0" checked> No
+                    <input type="radio" name="yellowish_skin" id="" value="1"> Yes
+                    <br>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="submit-button">Predict the disease</button>
+            </div>
+            
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
