@@ -57,10 +57,11 @@ header{
     padding: 0px;
 }
 
-#title p{
+#title a{
     font-size: 40px;
     font-weight: 900;
     margin-top: 0px;
+    text-decoration: none;
     font-variant: small-caps;
     color: #485461;
     letter-spacing: 3px;
